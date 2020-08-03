@@ -12,6 +12,7 @@
   <%= form_tag "/flight_passengers", method: :post do %>
     <%= label_tag "Flight number:" %>
     <%= number_field_tag :flight_number %>
+    <%= hidden_field_tag :passenger_id, @passenger.id %>
     <%= submit_tag "Submit" %>
   <% end %>
 </section>
