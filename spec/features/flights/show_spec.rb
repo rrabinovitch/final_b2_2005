@@ -14,7 +14,7 @@ RSpec.describe "When I visit a flight's show page," do
   end
 
   it "I see all of that flight's information: number, date, time, departure city, and arrival city." do
-    expect(page).to have_content(@flight.number})
+    expect(page).to have_content(@flight.number)
     expect(page).to have_content("Date: #{@flight.date}")
     expect(page).to have_content("Time: #{@flight.time}")
     expect(page).to have_content("Departure city: #{@flight.departure_city}")
@@ -22,7 +22,7 @@ RSpec.describe "When I visit a flight's show page," do
   end
 
   it "I see the name of the airline this flight belongs to." do
-    expect(page).to have_content(#{@airline.name})
+    expect(page).to have_content(@airline.name)
   end
 
   it "I see the names of all passengers on this flight." do
