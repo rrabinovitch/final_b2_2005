@@ -1,3 +1,3 @@
-class FlightsController < ApplicationController
+class PassengersController < ApplicationController
 
 end
