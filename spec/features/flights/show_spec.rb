@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "When I visit a flight's show page," do
   before :each do
-    @airline = Airline.create(name: “Frontier”)
+    @airline = Airline.create(name: "Frontier")
     @flight = @airline.flights.create(number: 1727, date: "08/03/20", time: "12PM MT", departure_city: "Denver", arrival_city: "Reno")
     @passenger_1 = Passenger.create(name: "Bob", age: 32)
     @passenger_2 = Passenger.create(name: "Barry", age: 17)
@@ -32,6 +32,6 @@ RSpec.describe "When I visit a flight's show page," do
   end
 
   it "I see the number of minors and adults on the flight." do
-    
+
   end
 end
