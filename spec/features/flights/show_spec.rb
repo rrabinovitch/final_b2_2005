@@ -10,7 +10,7 @@ RSpec.describe "When I visit a flight's show page," do
     FlightPassenger.create(flight_id: @flight.id, passenger_id: @passenger_1.id)
     FlightPassenger.create(flight_id: @flight.id, passenger_id: @passenger_2.id)
     FlightPassenger.create(flight_id: @flight.id, passenger_id: @passenger_3.id)
-    visit "/flights/#{@airline.id}"
+    visit "/flights/#{@flight.id}"
   end
 
   it "I see all of that flight's information: number, date, time, departure city, and arrival city." do
