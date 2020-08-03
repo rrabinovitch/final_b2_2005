@@ -32,6 +32,7 @@ RSpec.describe "When I visit a flight's show page," do
   end
 
   it "I see the number of minors and adults on the flight." do
-
+    expect(page).to have_content("Number of minors on flight: 1")
+    expect(page).to have_content("Number of adults on flight: 2")
   end
 end
